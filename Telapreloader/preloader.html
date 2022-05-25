@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader</title>
+    <style type="text/css">
+        body {
+            height: 100vh;
+            background: rgb(168, 163, 214);
+            display: grid;
+            place-items: center;
+        }
+        .preloader {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 15px solid black;
+            box-sizing: border-box;
+            border-top-color: rgb(154, 127, 222);
+            background: rgb(168, 163, 214);
+            animation: preloader 1.2s linear infinite;
+
+        }
+        @keyframes preloader {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="preloader"></div>
+</body>
+</html>
